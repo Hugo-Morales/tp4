@@ -29,7 +29,7 @@ img {
 .logo {
     font-size: 35px;
     letter-spacing: 2px;
-    margin-right: 40px;
+    margin: 5px 40px;
 }
 
 .nav a {
@@ -61,8 +61,8 @@ img {
 .top {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     position: relative;
-    width: 100%;
     margin-right: 15px;
     margin-left: 15px;
 }
@@ -81,7 +81,6 @@ img {
 .columna-1 {
     display: flex;
     flex-flow: row wrap;
-    width: 62%;
     margin-top: 80px;
     margin-bottom: 20px;
 }
@@ -136,13 +135,60 @@ img {
 }
 
 .columna-2 {
-    margin-top: 90px !important;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 30%;
-    border-radius: 5px;
-    background: #000;
+    position: relative;
+}
+
+
+/* Aside */
+
+.aside-link>a {
+    background: repeating-linear-gradient(to right, #04f7ff 0, #5350f7 50%, #04f7ff 100%);
+    background-size: 200% 200%;
+    background-position: 0 100%;
+    animation: gradient 2s linear infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000000e5;
+}
+
+footer p {
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.icon-social {
+    margin: 10px 0;
+}
+
+.icon-social a {
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+    margin: 0 3px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.icon-social a:hover {
+    color: rgb(78, 78, 78);
 }
 
 @media only screen and (max-width: 361px) {
@@ -169,12 +215,11 @@ img {
     }
     .columna-1 {
         margin-top: 100px;
-        width: 92%;
+        width: 90%;
     }
     .columna-2 {
-        width: 90%;
-        height: 198px;
-        margin: 0 !important;
+        width: 86%;
+        margin-bottom: 5px;
         background: #000;
     }
     .articulo-1 {
@@ -182,6 +227,31 @@ img {
     }
     .active {
         display: block !important;
+    }
+    .data {
+        background-color: #fff;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .aside-title {
+        position: relative;
+        margin: 0 10px;
+        text-align: center;
+    }
+    .aside-title>h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .aside-link {
+        margin: 20px;
+        text-align: center;
+    }
+    .aside-link>a {
+        font-size: 15px;
+        padding: 5px 10px;
+        border-radius: 25px;
+        color: #fff;
     }
 }
 
@@ -194,5 +264,42 @@ img {
     }
     .menu-nav li {
         display: inline-block;
+    }
+    .columna-1 {
+        width: 62%;
+    }
+    .columna-2 {
+        margin-top: 90px !important;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 30%;
+        border-radius: 5px;
+        background: #000;
+    }
+    .data {
+        background-color: #fff;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .aside-title {
+        position: relative;
+        margin: 0 30px;
+        text-align: center;
+    }
+    .aside-title>h1 {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .aside-link {
+        margin: 20px;
+        text-align: center;
+    }
+    .aside-link>a {
+        font-size: 30px;
+        padding: 5px 10px;
+        border-radius: 25px;
+        color: #fff;
     }
 }
