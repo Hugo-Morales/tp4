@@ -191,6 +191,22 @@ footer p {
     color: rgb(78, 78, 78);
 }
 
+.icon {
+    display: block;
+    font-size: 30px;
+    float: right;
+    top: 12px;
+    right: 20px;
+    position: absolute;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+}
+
+.active {
+    display: block !important;
+}
+
 @media only screen and (max-width: 361px) {
     body {
         background-color: lightblue;
@@ -201,17 +217,6 @@ footer p {
     }
     .title {
         width: 250px !important;
-    }
-    .icon {
-        display: block;
-        font-size: 30px;
-        float: right;
-        top: 12px;
-        right: 20px;
-        position: absolute;
-        cursor: pointer;
-        color: rgba(255, 255, 255, 0.8);
-        margin: auto;
     }
     .columna-1 {
         margin-top: 100px;
@@ -225,8 +230,55 @@ footer p {
     .articulo-1 {
         width: 350px;
     }
-    .active {
-        display: block !important;
+    .data {
+        background-color: #fff;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .aside-title {
+        position: relative;
+        margin: 0 10px;
+        text-align: center;
+    }
+    .aside-title>h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .aside-link {
+        margin: 20px;
+        text-align: center;
+    }
+    .aside-link>a {
+        font-size: 15px;
+        padding: 5px 10px;
+        border-radius: 25px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    body {
+        background-color: lightblue;
+    }
+    .menu-nav {
+        display: none;
+        position: relative;
+    }
+    .title {
+        width: 250px !important;
+    }
+    .columna-1 {
+        margin-top: 100px;
+        width: 90%;
+    }
+    .columna-2 {
+        width: 86%;
+        margin-bottom: 5px;
+        background: #000;
+    }
+    .articulo-1 {
+        width: 250px;
     }
     .data {
         background-color: #fff;
