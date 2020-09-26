@@ -4,6 +4,7 @@ Versión 1.3
 -Se agregó list.html con sus respectivas clases, links y powerpoints.
 -Se modificó table para tener dos html.
 -Se agregó su respectivo css para modificar libremente.
+-Se agregó una view responsive de 640px.
 
 Versión 1.2.1
 -Se fixed el width.
