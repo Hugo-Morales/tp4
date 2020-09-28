@@ -1,0 +1,75 @@
+.title-register {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+
+/* Section - Formulario */
+
+form {
+    border: #000000 solid;
+    padding: 20px;
+    margin: 0 200px;
+}
+
+.ti-form {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.box-form {
+    margin: 10px 20px 10px 10px;
+}
+
+.box-form input {
+    padding: 5px;
+}
+
+.box-form label {
+    padding-right: 20px;
+}
+
+input#Nombre,
+#Apellido,
+#Direccion,
+#Password,
+#Email,
+#Comentario {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+    border: 0;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+input[type="submit"] {
+    margin-left: 400px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border: 0;
+    outline: none;
+}
+
+.center {
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+    form {
+        margin: 0 10px;
+    }
+    input[type="submit"] {
+        margin-left: 80px;
+    }
+}

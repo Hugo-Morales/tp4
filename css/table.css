@@ -8,7 +8,7 @@
 .tabla {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    padding-bottom: 20px;
 }
 
 table {
@@ -43,7 +43,6 @@ td>a:hover {
     color: #FFFFFF;
     padding: 4px 8px;
     border-radius: 5px;
-    align-items: center;
 }
 
 .links {
@@ -57,4 +56,21 @@ td>a:hover {
     padding: 3px 8px;
     border-radius: 5px;
     align-items: center;
+}
+
+@media only screen and (max-width: 361px) {
+    .list-title {
+        padding: 10px;
+        font-size: 25px;
+    }
+    .tabla {
+        display: block;
+        margin: 0 5px;
+        text-align: left;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 50%;
+    }
 }
